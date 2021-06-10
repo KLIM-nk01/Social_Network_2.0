@@ -1,0 +1,19 @@
+.dialogs_wrapper {
+
+    width: 1160px;
+    border: 1px solid black;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+
+
+    .column {
+      box-sizing: border-box;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+}

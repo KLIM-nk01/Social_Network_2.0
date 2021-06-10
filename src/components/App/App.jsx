@@ -4,20 +4,27 @@ import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
 import Profile from "../Profile/Profile";
 import BackgroundImage from "../BackgoundImage/BackgroundImage";
+import Dialogs from "../Dialogs/Dialogs";
+import {BrowserRouter, Route} from "react-router-dom";
 
 const App = () => {
     return (
-        <div className="App">
-            <Header/>
-            <BackgroundImage/>
-            <Navigation/>
+        <BrowserRouter>
+            <div className="App">
+                <Header/>
+                <BackgroundImage/>
+                <Navigation/>
+
+                <Route path="/profile" component={Profile}/>
+                <Route path="/dialogs" component={Dialogs}/>
 
 
-                <Profile/>
+
+            </div>
+        </BrowserRouter>
+            );
 
 
-        </div>
-    );
 }
 
 export default App;

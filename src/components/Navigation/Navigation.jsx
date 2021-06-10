@@ -1,6 +1,7 @@
 import React from 'react';
 import NavigationStyle from './NavigationStyle.module.scss';
 import ProfilePhoto from "./ProfilePhoto/ProfilePhoto";
+import {NavLink} from "react-router-dom";
 
 const Navigation = () => {
     return (
@@ -8,9 +9,9 @@ const Navigation = () => {
             <ProfilePhoto/>
 
             <div className={NavigationStyle.nav}>
-                <a href='#'>My Profile</a>
+                <NavLink to='/profile'>My Profile</NavLink>
+                <NavLink to='/dialogs'>Messenger</NavLink>
                 <a href='#'>News</a>
-                <a href='#'>Messenger</a>
                 <a href='#'>Friends</a>
                 <a href='#'>Photo</a>
             </div>
