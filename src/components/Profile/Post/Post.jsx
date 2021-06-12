@@ -4,11 +4,12 @@ import PostHeader from "./PostHeader/PostHeader";
 import PostContent from "./PostContent/PostContent";
 
 
+
 const Posts = (props) => {
     return (
         <div className={PostStyle.post_wrapper}>
             <PostHeader/>
-            <PostContent  massage={props.massage}/>
+            <PostContent  contentMessage={props.contentMessage} id={props.id}/>
             {/*<PostFooter/>*/}
 
         </div>

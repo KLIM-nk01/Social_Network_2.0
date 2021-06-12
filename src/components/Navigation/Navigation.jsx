@@ -9,11 +9,12 @@ const Navigation = () => {
             <ProfilePhoto/>
 
             <div className={NavigationStyle.nav}>
-                <NavLink to='/profile'>My Profile</NavLink>
-                <NavLink to='/dialogs'>Messenger</NavLink>
-                <a href='#'>News</a>
-                <a href='#'>Friends</a>
-                <a href='#'>Photo</a>
+                <NavLink to='/profile' activeClassName={NavigationStyle.activeLink}>My Profile</NavLink>
+                <NavLink  to='/dialogs' activeClassName={NavigationStyle.activeLink}>Messenger</NavLink>
+                <NavLink to='/news' activeClassName={NavigationStyle.activeLink}>News</NavLink>
+                <NavLink to='/photo' activeClassName={NavigationStyle.activeLink}>Photo</NavLink>
+                {/*<NavLink to='#' activeClassName={NavigationStyle.activeLink}>Friends</NavLink>*/}
+
             </div>
 
         </div>

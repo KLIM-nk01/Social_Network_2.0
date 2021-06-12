@@ -5,7 +5,8 @@ import PostContentStyle from './PostContentStyle.module.scss'
 const PostContent = (props) => {
     return (
         <div className={PostContentStyle.postContent_wrapper}>
-            {props.massage}
+            {props.contentMessage}
+            <span>{props.id}</span>
         </div>
     );
 };

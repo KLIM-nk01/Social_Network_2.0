@@ -1,4 +1,4 @@
-.dialogs_wrapper {
+.news_wrapper {
 
     width: 1160px;
     border: 1px solid black;
@@ -8,7 +8,7 @@
 
 
 
-    .columnOne, .columnTwo {
+    .column {
       box-sizing: border-box;
       border: 1px solid black;
       display: flex;
@@ -16,14 +16,4 @@
       align-items: center;
     }
 
-  .columnOne {
-    width: 40%;
-  }
-  .columnTwo {
-    width: 60%;
-  }
-
-  a {
-    width: 100%;
-  }
 }

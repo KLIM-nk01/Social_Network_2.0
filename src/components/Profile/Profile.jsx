@@ -6,20 +6,28 @@ import RecentNotifications from "./RecentNotifications/RecentNotifications";
 import Post from "./Post/Post";
 import Advertizement from "./Advertizement/Advertizement";
 
-const Profile = () => {
+
+
+
+const Profile = (props) => {
+    let posts = props.postData.map(post => <Post contentMessage={post.contentMessage} id={post.id}/>)
     return (
         <div className={ProfileStyle.profile_wrapper}>
+
             <div className={ProfileStyle.column}>
                 <PageLikeList/>
             </div>
+
             <div className={ProfileStyle.column}>
                 <PostShare/>
-                <Post massage='Hi, this it my first post'/>
+                {posts}
             </div>
+
             <div className={ProfileStyle.column}>
                 <RecentNotifications/>
                 <Advertizement/>
             </div>
+
         </div>
     );
 };
