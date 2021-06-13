@@ -8,6 +8,7 @@ import Dialogs from "../Dialogs/Dialogs";
 import News from "../News/News";
 import {BrowserRouter, Route} from "react-router-dom";
 import Photo from "../Photo/Photo";
+import '../../global/reset.scss';
 
 
 const App = (props) => {

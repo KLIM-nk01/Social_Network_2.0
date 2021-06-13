@@ -1,8 +1,12 @@
+@import './../../../global/mixin.scss';
+
 .post_wrapper {
+  @include shadow;
   width: 570px;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid red;
   margin-top: 30px;
+  background: white;
 
   display: flex;
   flex-direction: column;
